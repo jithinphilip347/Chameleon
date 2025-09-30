@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Icon from '../../assets/images/subcolors.png';
 import CompanyLogo from '../../assets/images/sublogo.png';
-import { FiMenu } from "react-icons/fi";
-import SideNav from "./SideNav";
+// import { FiMenu } from "react-icons/fi";
+// import SideNav from "./SideNav";
 
 const HomeSubColors = () => {
-const [isOpen, setIsOpen] = useState(false);
+// const [isOpen, setIsOpen] = useState(false);
   
   return (
     <div id='HomeSubColors'>
      <div className="container">
-        <div className="CompanyLogo">
+        {/* <div className="CompanyLogo">
           <img src={CompanyLogo} alt="Company Logo" />
-        </div>
+        </div> */}
         
-        <div className="MenuIcon" onClick={() => setIsOpen(true)}>
+        {/* <div className="MenuIcon" onClick={() => setIsOpen(true)}>
             <FiMenu />
-          </div>
+          </div> */}
         
 
         <div className="HomeCraftMain">
@@ -26,7 +26,7 @@ const [isOpen, setIsOpen] = useState(false);
             </div>
           </div>
 
-          <div className="Links">
+          {/* <div className="Links">
             <ul>
               <li >Craft</li>
               <li className="active">Colors</li>
@@ -35,9 +35,9 @@ const [isOpen, setIsOpen] = useState(false);
               <li>Adaptations</li>
               <li>Connect</li>
             </ul>
-          </div>
+          </div> */}
         </div>
-       <SideNav isOpen={isOpen} setIsOpen={setIsOpen} />
+       {/* <SideNav isOpen={isOpen} setIsOpen={setIsOpen} /> */}
       </div>
     </div>
   )

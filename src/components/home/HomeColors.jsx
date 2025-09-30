@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Icon from '../../assets/images/colors.png';
-import CompanyLogo from '../../assets/images/logo.png';
-import { FiMenu } from "react-icons/fi";
-import SideNav from "./SideNav";
+// import CompanyLogo from '../../assets/images/logo.png';
+// import { FiMenu } from "react-icons/fi";
+// import SideNav from "./SideNav";
 
 
 const HomeColors = () => {
-const [isOpen, setIsOpen] = useState(false);
+// const [isOpen, setIsOpen] = useState(false);
   
   return (
     <div id='HomeColors'>
      <div className="container">
-        <div className="CompanyLogo">
+        {/* <div className="CompanyLogo">
           <img src={CompanyLogo} alt="Company Logo" />
-        </div>
+        </div> */}
        
-         <div className="MenuIcon" onClick={() => setIsOpen(true)}>
+         {/* <div className="MenuIcon" onClick={() => setIsOpen(true)}>
           <FiMenu />
-        </div>
+        </div> */}
 
         <div className="HomeCraftMain">
           <div className="CraftIcon">
@@ -26,7 +26,7 @@ const [isOpen, setIsOpen] = useState(false);
             </div>
           </div>
 
-          <div className="Links">
+          {/* <div className="Links">
             <ul>
               <li >Craft</li>
               <li className="active">Colors</li>
@@ -35,10 +35,10 @@ const [isOpen, setIsOpen] = useState(false);
               <li>Adaptations</li>
               <li>Connect</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         
-        <SideNav isOpen={isOpen} setIsOpen={setIsOpen} />
+        {/* <SideNav isOpen={isOpen} setIsOpen={setIsOpen} /> */}
       </div>
     </div>
   )

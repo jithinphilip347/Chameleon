@@ -3,11 +3,10 @@ import Home from "./components/home/Home";
 import Nav from "./components/navbar/Nav";
 
 function App() {
-  const showNav = window.location.pathname !== "/"; 
 
   return (
     <>
-      {showNav && <Nav />}
+      <Nav />
       <Home />
       <Footer />
     </>

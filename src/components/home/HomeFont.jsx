@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import CompanyLogo from "../../assets/images/logo.png";
+// import React, { useState } from "react";
+// import CompanyLogo from "../../assets/images/logo.png";
 import FontImg1 from "../../assets/images/fontimg-1.jpg";
 import FontImg2 from "../../assets/images/fontimg-2.jpg";
 import FontImg3 from "../../assets/images/fontimg-3.jpg";
 import FontImg4 from "../../assets/images/fontimg-4.jpg";
 import FontImg5 from "../../assets/images/fontimg-5.jpg";
 import FontImg6 from "../../assets/images/fontimg-6.jpg";
-import { FiMenu } from "react-icons/fi";
-import SideNav from "./SideNav";
+// import { FiMenu } from "react-icons/fi";
+// import SideNav from "./SideNav";
 
 const HomeFont = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
   
   return (
     <div id="HomeFont">
@@ -24,15 +24,15 @@ const HomeFont = () => {
       </div>
 
       <div className="container">
-        <div className="CompanyLogo">
+        {/* <div className="CompanyLogo">
           <img src={CompanyLogo} alt="Company Logo" />
-        </div>
-           <div className="MenuIcon" onClick={() => setIsOpen(true)}>
+        </div> */}
+           {/* <div className="MenuIcon" onClick={() => setIsOpen(true)}>
                   <FiMenu />
-                </div>
+                </div> */}
 
         <div className="HomeCraftMain">
-          <div className="Links">
+          {/* <div className="Links">
             <ul>
               <li>Craft</li>
               <li>Colors</li>
@@ -41,10 +41,10 @@ const HomeFont = () => {
               <li >Adaptations</li>
               <li>Connect</li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
-                <SideNav isOpen={isOpen} setIsOpen={setIsOpen} />
+                {/* <SideNav isOpen={isOpen} setIsOpen={setIsOpen} /> */}
       </div>
     </div>
   );

@@ -1,25 +1,44 @@
 @charset "UTF-8";
 #Nav {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.4s ease;
 }
-#Nav .CompanyLogo {
-  position: absolute;
-  top: 40px;
-  left: 50px;
+#Nav.scrolled {
+  background: #fff;
+}
+#Nav.scrolled .NavMain .MenuIcon {
+  color: var(--textColor);
+}
+#Nav.scrolled .NavMain .Links ul li {
+  color: var(--textColor);
+}
+#Nav.scrolled .NavMain .Links ul li.active {
+  color: var(--secondaryColor);
+}
+#Nav .NavMain {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Nav .NavMain .CompanyLogo {
   width: 120px;
-  z-index: 20;
 }
-#Nav .CompanyLogo img {
+#Nav .NavMain .CompanyLogo img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#Nav .MenuIcon {
+#Nav .NavMain .MenuIcon {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 50px;
   font-size: 32px;
   color: #fff;
@@ -27,36 +46,21 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-#Nav .MenuIcon:hover {
+#Nav .NavMain .MenuIcon:hover {
   transform: scale(1.1);
 }
 @media (max-width: 1024px) {
-  #Nav .MenuIcon {
+  #Nav .NavMain .MenuIcon {
     display: block;
   }
 }
-#Nav .Links {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
+#Nav .NavMain .Links ul {
   display: flex;
-  justify-content: flex-end;
-}
-@media (max-width: 1024px) {
-  #Nav .Links {
-    display: none;
-  }
-}
-#Nav .Links ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-end;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
-#Nav .Links ul li {
+#Nav .NavMain .Links ul li {
   font-size: 16px;
   text-transform: uppercase;
   font-family: myFont1;
@@ -66,34 +70,15 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-#Nav .Links ul li:hover {
+#Nav .NavMain .Links ul li:hover {
   color: var(--secondaryColor);
 }
-#Nav .Links ul li.active {
+#Nav .NavMain .Links ul li.active {
   color: var(--secondaryColor);
 }
-@media (max-width: 768px) {
-  #Nav .CompanyLogo {
-    top: 30px;
-    left: 30px;
-    width: 100px;
-  }
-  #Nav .MenuIcon {
-    top: 30px;
-    right: 30px;
-    font-size: 30px;
-  }
-}
-@media (max-width: 480px) {
-  #Nav .CompanyLogo {
-    top: 20px;
-    left: 20px;
-    width: 80px;
-  }
-  #Nav .MenuIcon {
-    top: 20px;
-    right: 20px;
-    font-size: 28px;
+@media (max-width: 1024px) {
+  #Nav .NavMain .Links {
+    display: none;
   }
 }
 

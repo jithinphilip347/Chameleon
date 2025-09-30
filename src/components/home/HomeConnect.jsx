@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import Icon from "../../assets/images/identity.png";
+// import React, { useState } from "react";
+// import Icon from "../../assets/images/identity.png";
 import CompanyLogo from "../../assets/images/sublogo.png";
 import { FaInstagram, FaLinkedinIn, FaFacebookF, FaYoutube, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
-import { FiMenu } from "react-icons/fi";
-import SideNav from "./SideNav";
+// import { FiMenu } from "react-icons/fi";
+// import SideNav from "./SideNav";
 
 const HomeConnect = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
   
   return (
     <div id="HomeConnect">
       <div className="container">
-        <div className="CompanyLogo">
+        {/* <div className="CompanyLogo">
           <img src={CompanyLogo} alt="Company Logo" />
-        </div>
- <div className="MenuIcon" onClick={() => setIsOpen(true)}>
+        </div> */}
+ {/* <div className="MenuIcon" onClick={() => setIsOpen(true)}>
           <FiMenu />
-        </div>
+        </div> */}
         <div className="HomeCraftMain">
           <div className="IdentityDesc">
             <h2>
@@ -63,7 +63,7 @@ const HomeConnect = () => {
                 </div>
           </div>
 
-          <div className="Links">
+          {/* <div className="Links">
             <ul>
               <li>Craft</li>
               <li>Colors</li>
@@ -72,9 +72,9 @@ const HomeConnect = () => {
               <li>Adaptations</li>
               <li className="active">Connect</li>
             </ul>
-          </div>
+          </div> */}
         </div>
-                <SideNav isOpen={isOpen} setIsOpen={setIsOpen} />
+                {/* <SideNav isOpen={isOpen} setIsOpen={setIsOpen} /> */}
 
       </div>
     </div>

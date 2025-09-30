@@ -1,14 +1,33 @@
 #Nav {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.4s ease;
+  // padding: 20px 50px;
 
+  &.scrolled {
+    background: #fff;
+     .NavMain  .MenuIcon{
+      color: var(--textColor);
+     }
+   .NavMain .Links ul li {
+      color: var(--textColor);
+
+      &.active {
+        color: var(--secondaryColor);
+      }
+    }
+  }
+   .NavMain{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   .CompanyLogo {
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    width: 120px;
-    z-index: 20;
-
+       width: 120px;
     img {
       width: 100%;
       height: auto;
@@ -19,7 +38,7 @@
   .MenuIcon {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 50px;
     font-size: 32px;
     color: #fff;
@@ -35,24 +54,10 @@
       display: block;
     }
   }
-
-  .Links {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: flex-end;
-
-    @media (max-width: 1024px) {
-      display: none;
-    }
-
+ .Links {
     ul {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: flex-end;
+      gap: 30px;
       padding: 0;
       margin: 0;
 
@@ -75,34 +80,17 @@
         }
       }
     }
-  }
 
-  @media (max-width: 768px) {
-    .CompanyLogo {
-      top: 30px;
-      left: 30px;
-      width: 100px;
-    }
-    .MenuIcon {
-      top: 30px;
-      right: 30px;
-      font-size: 30px;
+    @media (max-width: 1024px) {
+      display: none;
     }
   }
+   }
 
-  @media (max-width: 480px) {
-    .CompanyLogo {
-      top: 20px;
-      left: 20px;
-      width: 80px;
-    }
-    .MenuIcon {
-      top: 20px;
-      right: 20px;
-      font-size: 28px;
-    }
-  }
+
+ 
 }
+
 
 //Home Banner 
 #HomeBanner {
