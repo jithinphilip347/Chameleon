@@ -28,7 +28,7 @@ const HomeSubIdentity = () => {
             </p>
             <p>
               {" "}
-              We are not just S team; we are a living. evolving organism, <br />  like
+              We are not just a team; we are a living. evolving organism, <br />  like
               the chameleon adapting, changing, and thriving in every creative
               challenge.
             </p>
